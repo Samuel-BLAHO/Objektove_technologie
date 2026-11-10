@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ot6.HelloController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" onAction="#spusti" text="Run All" />
+            <TextField fx:id="tfield" />
+        </items>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </ToolBar>
+   </top>
+   <center>
+      <HBox minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="56.0" text="Faktotial" />
+                  <TextArea fx:id="faktorial_area" minWidth="-Infinity" prefHeight="200.0" prefWidth="179.0" />
+                  <ProgressBar fx:id="faktorial_progres" prefWidth="200.0" progress="0.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Mocnina" />
+                  <TextArea fx:id="mocnina_area" minWidth="-Infinity" prefHeight="200.0" prefWidth="183.0" />
+                  <ProgressBar fx:id="mocnina_progres" prefWidth="200.0" progress="0.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="360.0" prefWidth="185.0">
+               <children>
+                  <Label text="Fibonachi" />
+                  <TextArea fx:id="fibonachi_area" minWidth="-Infinity" prefHeight="200.0" prefWidth="140.0" />
+                  <ProgressBar fx:id="fibonachi_progres" prefWidth="200.0" progress="0.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
