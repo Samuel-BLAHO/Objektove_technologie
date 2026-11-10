@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.ot4b.HelloController"
+      spacing="5">
+
+    <Button text="Pridať bylinožravca"
+            onAction="#pridajBylinozravca"/>
+
+    <Button text="Pridať mäsožravca"
+            onAction="#pridajMasozravca"/>
+
+    <Button text="Zmeniť smer mäsožravcov"
+            onAction="#zmenSmerMasozravcov"/>
+
+    <Button text="Zastaviť / spustiť pohyb"
+            onAction="#zastavAleboSpusti"/>
+
+    <Pane fx:id="plocha"
+          prefWidth="600"
+          prefHeight="380"
+          minWidth="600"
+          minHeight="380"
+          maxWidth="600"
+          maxHeight="380"/>
+</VBox>
